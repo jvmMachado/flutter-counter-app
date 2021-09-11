@@ -3,7 +3,14 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(MaterialApp(
     theme: ThemeData(primarySwatch: Colors.cyan),
-    home: Scaffold(
+    home: HomePage(),
+  ));
+}
+
+class HomePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
       appBar: AppBar(
         title: Text('Meu primeiro app'),
       ),
@@ -14,6 +21,6 @@ void main() {
         child: Icon(Icons.add),
         onPressed: () {},
       ),
-    ),
-  ));
+    );
+  }
 }
