@@ -7,15 +7,13 @@ void main() {
       appBar: AppBar(
         title: Text('Meu primeiro app'),
       ),
-      body: Container(
-          color: Colors.purple,
-          child: Center(
-            child: Container(
-              height: 200,
-              width: 200,
-              color: Colors.yellow,
-            ),
-          )),
+      body: Center(
+        child: Text("Counter:\n0", textAlign: TextAlign.center),
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+        onPressed: () {},
+      ),
     ),
   ));
 }
